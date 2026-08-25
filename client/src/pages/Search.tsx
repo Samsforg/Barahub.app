@@ -74,7 +74,7 @@ export default function Search() {
             </div>
           ))
         ) : filtered.length === 0 ? (
-          <div className="text-center py-16 text-gray-400">
+          <div className="text-center py-16 text-gray-600">
             <div className="text-4xl mb-2">🔍</div>
             <p className="text-sm">Aucun artisan trouvé</p>
           </div>

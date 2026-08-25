@@ -30,7 +30,7 @@ export default function UpdatePrompt() {
         <span className="flex-1 leading-snug">
           {needRefresh ? (
             <>🔄 <span className="font-medium">Nouvelle version disponible !</span><br />
-              <span className="text-white/60 text-xs">Recharge pour profiter des dernières fonctionnalités</span>
+              <span className="text-white/80 text-xs">Recharge pour profiter des dernières fonctionnalités</span>
             </>
           ) : (
             <>✅ <span className="font-medium">Barahub est prête hors ligne</span></>

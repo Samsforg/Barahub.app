@@ -44,7 +44,7 @@ export default function Profile() {
         <div className="text-center">
           <h1 className="text-lg font-semibold">{profile?.full_name || 'Utilisateur'}</h1>
           <p className="text-sm text-gray-500">{user.email}</p>
-          {profile?.phone && <p className="text-xs text-gray-400 mt-0.5">{profile.phone}</p>}
+          {profile?.phone && <p className="text-xs text-gray-600 mt-0.5">{profile.phone}</p>}
         </div>
         {profile?.is_artisan && (
           <span className="bg-brand-600 text-white text-xs px-3 py-1 rounded-full">Artisan</span>

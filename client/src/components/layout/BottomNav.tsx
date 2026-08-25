@@ -16,7 +16,7 @@ export default function BottomNav() {
           const active = location === item.href || (item.href !== '/' && location.startsWith(item.href))
           return (
             <Link key={item.href} href={item.href} className="flex-1">
-              <div className={`flex flex-col items-center py-2.5 gap-0.5 ${active ? 'text-brand-600' : 'text-gray-400'}`}>
+              <div className={`flex flex-col items-center py-2.5 gap-0.5 ${active ? 'text-brand-600' : 'text-gray-500'}`}>
                 <span className="text-xl">{item.icon}</span>
                 <span className="text-xs">{item.label}</span>
               </div>

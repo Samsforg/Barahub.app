@@ -49,7 +49,7 @@ export default function Home() {
       {/* Header */}
       <div className="bg-brand-600 px-4 pt-12 pb-5">
         <div className="flex items-center justify-between mb-1">
-          <div className="flex items-center gap-1 text-white/80 text-xs">
+          <div className="flex items-center gap-1 text-white text-xs">
             <span>📍</span> Abidjan, Côte d'Ivoire
           </div>
           {user ? (
@@ -68,7 +68,7 @@ export default function Home() {
           {profile ? `Bonjour ${profile.full_name.split(' ')[0]} 👋` : 'Barahub 👋'}
         </h1>
         <Link href="/search">
-          <div className="bg-white/15 border border-white/20 rounded-xl px-4 py-3 flex items-center gap-2 text-white/70 text-sm">
+          <div className="bg-white/15 border border-white/20 rounded-xl px-4 py-3 flex items-center gap-2 text-white/95 text-sm">
             🔍 Quel artisan cherchez-vous ?
           </div>
         </Link>
@@ -82,7 +82,7 @@ export default function Home() {
           <div className="text-sm font-medium text-red-700">Dépannage urgent — 15 min</div>
           <div className="text-xs text-red-500">Un artisan chez vous rapidement</div>
         </div>
-        <span className="text-red-400">›</span>
+        <span className="text-red-600 font-bold">›</span>
       </div>
 
       {/* Catégories */}
@@ -132,7 +132,7 @@ export default function Home() {
             ))}
           </div>
         ) : artisans.length === 0 ? (
-          <div className="text-center py-10 text-gray-400">
+          <div className="text-center py-10 text-gray-600">
             <div className="text-4xl mb-2">🔨</div>
             <p className="text-sm">Aucun artisan disponible pour l'instant</p>
             <p className="text-xs mt-1">Revenez bientôt !</p>

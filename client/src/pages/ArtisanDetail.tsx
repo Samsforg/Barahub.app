@@ -53,7 +53,7 @@ export default function ArtisanDetail() {
   )
 
   if (!artisan) return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center text-gray-400">
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center text-gray-600">
       <div className="text-center"><div className="text-4xl mb-2">😕</div><p>Artisan introuvable</p></div>
     </div>
   )
@@ -99,14 +99,14 @@ export default function ArtisanDetail() {
 
       {/* Bio */}
       <div className="px-4 py-4 border-b border-gray-100 bg-white">
-        <h2 className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-2">À propos</h2>
+        <h2 className="text-xs font-medium text-gray-600 uppercase tracking-wide mb-2">À propos</h2>
         <p className="text-sm text-gray-600 leading-relaxed">{artisan.description || 'Artisan professionnel disponible pour vos travaux.'}</p>
       </div>
 
       {/* Spécialités */}
       {artisan.specialties?.length > 0 && (
         <div className="px-4 py-4 border-b border-gray-100 bg-white">
-          <h2 className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-2">Spécialités</h2>
+          <h2 className="text-xs font-medium text-gray-600 uppercase tracking-wide mb-2">Spécialités</h2>
           <div className="flex flex-wrap gap-2">
             {artisan.specialties.map((s, i) => (
               <span key={i} className="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full">{s}</span>
@@ -117,7 +117,7 @@ export default function ArtisanDetail() {
 
       {/* Avis */}
       <div className="px-4 py-4 bg-white">
-        <h2 className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-3">Avis clients ({artisan.review_count})</h2>
+        <h2 className="text-xs font-medium text-gray-600 uppercase tracking-wide mb-3">Avis clients ({artisan.review_count})</h2>
         {artisan.reviews && artisan.reviews.length > 0 ? artisan.reviews.slice(0, 3).map((r, i) => (
           <div key={i} className="mb-4 pb-4 border-b border-gray-50 last:border-0">
             <div className="flex items-center gap-2 mb-1">
@@ -132,7 +132,7 @@ export default function ArtisanDetail() {
             {r.comment && <p className="text-xs text-gray-500 leading-relaxed">{r.comment}</p>}
           </div>
         )) : (
-          <p className="text-sm text-gray-400">Pas encore d'avis. Soyez le premier !</p>
+          <p className="text-sm text-gray-600">Pas encore d'avis. Soyez le premier !</p>
         )}
       </div>
 
