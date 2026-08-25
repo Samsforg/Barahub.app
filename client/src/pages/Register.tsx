@@ -48,7 +48,7 @@ export default function Register() {
     <div className="min-h-screen bg-brand-50 flex items-center justify-center px-4">
       <div className="w-full max-w-sm bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
         <div className="text-center mb-6">
-          <h1 className="text-2xl font-semibold text-brand-900">BáraHub</h1>
+          <h1 className="text-2xl font-semibold text-brand-900">Barahub</h1>
           <p className="text-sm text-gray-500 mt-1">Créez votre compte gratuitement</p>
         </div>
 

@@ -10,8 +10,8 @@ export default defineConfig({
       registerType: 'prompt',
       includeAssets: ['favicon.svg'],
       manifest: {
-        name: 'BáraHub — Artisans de confiance en Côte d\'Ivoire',
-        short_name: 'BáraHub',
+        name: 'Barahub — Artisans de confiance en Côte d\'Ivoire',
+        short_name: 'Barahub',
         description:
           'L\'artisan qu\'il vous faut, quand vous en avez besoin. Trouvez des artisans vérifiés à Abidjan et en Côte d\'Ivoire.',
         lang: 'fr',

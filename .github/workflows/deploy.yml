@@ -1,4 +1,4 @@
-name: Deploy BáraHub to GitHub Pages
+name: Deploy Barahub to GitHub Pages
 
 on:
   push:

@@ -65,7 +65,7 @@ export default function Home() {
           )}
         </div>
         <h1 className="text-white text-xl font-semibold mb-3">
-          {profile ? `Bonjour ${profile.full_name.split(' ')[0]} 👋` : 'BáraHub 👋'}
+          {profile ? `Bonjour ${profile.full_name.split(' ')[0]} 👋` : 'Barahub 👋'}
         </h1>
         <Link href="/search">
           <div className="bg-white/15 border border-white/20 rounded-xl px-4 py-3 flex items-center gap-2 text-white/70 text-sm">

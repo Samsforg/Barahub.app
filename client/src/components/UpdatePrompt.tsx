@@ -33,7 +33,7 @@ export default function UpdatePrompt() {
               <span className="text-white/60 text-xs">Recharge pour profiter des dernières fonctionnalités</span>
             </>
           ) : (
-            <>✅ <span className="font-medium">BáraHub est prête hors ligne</span></>
+            <>✅ <span className="font-medium">Barahub est prête hors ligne</span></>
           )}
         </span>
         {needRefresh ? (

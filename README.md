@@ -1,4 +1,4 @@
-# BáraHub 🔨
+# Barahub 🔨
 
 > L'artisan qu'il vous faut, quand vous en avez besoin.
 
@@ -82,4 +82,4 @@ TTL  : 3600
 
 ---
 
-**BáraHub** — Construire le premier groupe tech africain, une startup à la fois.
+**Barahub** — Construire le premier groupe tech africain, une startup à la fois.
