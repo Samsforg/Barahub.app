@@ -12,7 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#0F6E56;font-family:'Inter',system-ui,sans-serif;">
+        <div style="width:72px;height:72px;border-radius:18px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.2);">
+          <img src="/icons/icon-192.png" alt="" width="56" height="56" style="border-radius:12px;" />
+        </div>
+        <div style="color:#fff;font-size:20px;font-weight:600;margin-top:14px;letter-spacing:.5px;">Barahub</div>
+        <div style="color:rgba(255,255,255,.7);font-size:13px;margin-top:4px;">L'artisan qu'il vous faut</div>
+        <div style="margin-top:24px;width:28px;height:28px;border:3px solid rgba(255,255,255,.25);border-top-color:#fff;border-radius:50%;animation:bh-spin .8s linear infinite;"></div>
+      </div>
+    </div>
+    <style>@keyframes bh-spin{to{transform:rotate(360deg)}}</style>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
