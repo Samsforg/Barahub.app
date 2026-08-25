@@ -1,13 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client'
-import { registerSW } from 'virtual:pwa-register'
 import App from './App'
+import UpdatePrompt from './components/UpdatePrompt'
 import './index.css'
-
-registerSW({ immediate: true })
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App />
+    <UpdatePrompt />
   </React.StrictMode>
 )
