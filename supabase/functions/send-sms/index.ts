@@ -50,8 +50,8 @@ Deno.serve(async (req) => {
     // 1) Tentative WhatsApp (moins cher, plus lu en Côte d'Ivoire)
     let response = await sendMessage(messageBody, user.phone, true)
 
-    // 2) Repli SMS si le canal WhatsApp échoue
-    if (!['queued', 'accepted'].includes(response.status)) {
+    // 2) Repli SMS si le canal WhatsApp échoue et qu'un numéro SMS est configuré
+    if (!['queued', 'accepted'].includes(response.status) && smsFrom) {
       console.log(`WhatsApp KO (${response.code}: ${response.message}), repli SMS`)
       response = await sendMessage(messageBody, user.phone, false)
     }
