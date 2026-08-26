@@ -59,6 +59,30 @@ export function useAuth() {
     return data
   }
 
+  async function signInWithPhone(phone: string, fullName?: string, isArtisan = false) {
+    const { error } = await supabase.auth.signInWithOtp({
+      phone,
+      options: {
+        data: {
+          full_name: fullName || '',
+          is_artisan: isArtisan,
+          phone,
+        },
+      },
+    })
+    if (error) throw error
+  }
+
+  async function verifyOtp(phone: string, token: string) {
+    const { data, error } = await supabase.auth.verifyOtp({
+      phone,
+      token,
+      type: 'sms',
+    })
+    if (error) throw error
+    return data
+  }
+
   async function signIn(email: string, password: string) {
     const { data, error } = await supabase.auth.signInWithPassword({ email, password })
     if (error) throw error
@@ -70,5 +94,5 @@ export function useAuth() {
     if (error) throw error
   }
 
-  return { ...state, signUp, signIn, signOut }
+  return { ...state, signInWithPhone, verifyOtp, signUp, signIn, signOut }
 }
