@@ -1,10 +1,83 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
 node_modules/
+.pnpm-store/
+*.manus-starter-[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]
+
+# Expo
+.expo/
 dist/
-.env
-.env.local
-.env*.local
-*.log
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
 .DS_Store
-.replit
-replit.nix
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+app-example
+
+# generated native folders
+/ios
+/android
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs
+*.log
+
+# OS
+Thumbs.db
+
+# Build files
+*.tgz
+*.tar.gz
 .cache/
+
+# Webdev artifacts (checkpoint zips, migrations, etc.)
+.webdev/
+
+# Secrets et fichiers d'environnement locaux
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Certificats et clés privées
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Sauvegardes locales et métadonnées d'outil
+.gitignore.backup-*
+.manus-starter-init.json

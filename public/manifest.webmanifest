@@ -1,0 +1,34 @@
+{
+  "name": "Barahub — Services à domicile à Abidjan",
+  "short_name": "Barahub",
+  "lang": "fr-CI",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FBF9F3",
+  "theme_color": "#0D6B5B",
+  "description": "Trouvez un professionnel vérifié pour vos services à domicile à Abidjan.",
+  "icons": [
+    {
+      "src": "/assets/images/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/android-icon-foreground.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Créer une demande",
+      "short_name": "Nouvelle demande",
+      "url": "/request",
+      "icons": [{ "src": "/assets/images/favicon.png", "sizes": "48x48", "type": "image/png" }]
+    }
+  ]
+}
